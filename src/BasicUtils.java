@@ -1,3 +1,4 @@
+import java.util.Base64;
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -42,6 +43,37 @@ public class BasicUtils {
     public static void string64Encoder(Scanner scanner) {
         System.out.println("Please chose an option:");
         System.out.println("1. Encode a String to Base64.\n2. Decode a String to Base 64");
+        int encodeOption = scanner.nextInt();
+        String inputString;
+        Scanner scannerInput = new Scanner(System.in);
+
+        switch (encodeOption) {
+            case 1:
+                System.out.println("Please enter the string to encode:");
+                inputString = scannerInput.nextLine();
+                String encodedString = "";
+
+                if (!inputString.strip().isEmpty()) {
+                    encodedString = Base64.getEncoder().encodeToString(inputString.getBytes());
+                }
+                System.out.println("Encoded String is:\n" + encodedString + "\n");
+
+                break;
+            case 2:
+                System.out.println("Please enter the string to decode:");
+                inputString = scannerInput.nextLine();
+                String decodedString = "";
+
+                if (!inputString.strip().isEmpty()) {
+                    byte[] decodeB = Base64.getDecoder().decode(inputString);
+                    decodedString = new String(decodeB);
+                }
+                System.out.println("Decoded String is:\n" + decodedString + "\n");
+
+                break;
+            default:
+                break;
+        }
     }
 
     public static void studentAverage(Scanner scanner) {
