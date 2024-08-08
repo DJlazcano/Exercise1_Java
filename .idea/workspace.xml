@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7ae8d2d-b54e-4755-888c-112201e6da4c" name="Changes" comment="Student Average Calculator">
-      <change afterPath="$PROJECT_DIR$/src/BasicCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StringEncoderB64.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StudentAvg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasicUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicUtils.java" afterDir="false" />
-    </list>
+    <list default="true" id="a7ae8d2d-b54e-4755-888c-112201e6da4c" name="Changes" comment="Code reformat and cleaning" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723137074889</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Code reformat and cleaning">
+      <option name="closed" value="true" />
+      <created>1723143962140</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723143962140</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -106,6 +108,7 @@
     <MESSAGE value="Feature calculator and interface" />
     <MESSAGE value="Feature base 64 encoder and decoder" />
     <MESSAGE value="Student Average Calculator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Student Average Calculator" />
+    <MESSAGE value="Code reformat and cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code reformat and cleaning" />
   </component>
 </project>
