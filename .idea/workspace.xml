@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7ae8d2d-b54e-4755-888c-112201e6da4c" name="Changes" comment="Feature base 64 encoder and decoder">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a7ae8d2d-b54e-4755-888c-112201e6da4c" name="Changes" comment="Student Average Calculator">
+      <change afterPath="$PROJECT_DIR$/src/BasicCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StringEncoderB64.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StudentAvg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BasicUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicUtils.java" afterDir="false" />
     </list>
@@ -87,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723074923215</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Student Average Calculator">
+      <option name="closed" value="true" />
+      <created>1723137074889</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723137074889</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -95,6 +105,7 @@
     <MESSAGE value="Feature calculator" />
     <MESSAGE value="Feature calculator and interface" />
     <MESSAGE value="Feature base 64 encoder and decoder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature base 64 encoder and decoder" />
+    <MESSAGE value="Student Average Calculator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Student Average Calculator" />
   </component>
 </project>
