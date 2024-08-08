@@ -1,5 +1,4 @@
-import java.util.Base64;
-import java.util.Scanner;
+import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class BasicUtils {
@@ -56,7 +55,7 @@ public class BasicUtils {
                 if (!inputString.strip().isEmpty()) {
                     encodedString = Base64.getEncoder().encodeToString(inputString.getBytes());
                 }
-                System.out.println("Encoded String is:\n" + encodedString + "\n");
+                System.out.println("Encoded String is: " + encodedString + "\n");
 
                 break;
             case 2:
@@ -68,7 +67,7 @@ public class BasicUtils {
                     byte[] decodeB = Base64.getDecoder().decode(inputString);
                     decodedString = new String(decodeB);
                 }
-                System.out.println("Decoded String is:\n" + decodedString + "\n");
+                System.out.println("Decoded String is: " + decodedString + "\n");
 
                 break;
             default:
@@ -77,7 +76,49 @@ public class BasicUtils {
     }
 
     public static void studentAverage(Scanner scanner) {
+        Scanner scannerInput = new Scanner(System.in);
+
+        Map<String, Float> signaturesMap = new HashMap<>();
+        String name, grade, signature;
+        int numSignatures;
+        float score;
+
         System.out.println("Please enter your name:");
+        name = scannerInput.nextLine();
+
+        System.out.println("Please enter your grade:");
+        grade = scannerInput.nextLine();
+
+        System.out.println("Please enter the number of signatures to enroll:");
+        numSignatures = scannerInput.nextInt();
+        scannerInput.nextLine();
+
+        for (int i = 1; i <= numSignatures; i++) {
+            System.out.println("Please enter the name of the signature " + i + ":");
+            signature = scannerInput.nextLine();
+
+            System.out.println("Please enter the score for " + signature + ":");
+            score = scannerInput.nextFloat();
+
+            signaturesMap.put(signature.strip(), score);
+            scannerInput.nextLine();
+
+        }
+
+        System.out.println("--------------------------------------------------------");
+        System.out.printf("Student name: %-30s Grade: %-6s%n", name, grade);
+        System.out.println("--------------------------------------------------------");
+        signaturesMap.entrySet()
+                .stream()
+                .forEach(g -> System.out.printf("       Signature: %-25s  Score: %-5.1f%n", g.getKey(), g.getValue()));
+        System.out.println("----------------------------------------------------");
+
+        OptionalDouble average = signaturesMap.values()
+                .stream()
+                .mapToDouble(Float::floatValue)
+                .average();
+        System.out.printf("%-20s%-2.2f Status: %-15s%n%n", "Final Average:", average.orElse(0), average.getAsDouble() >= 6.0 ? "Passed with good level." : "Did not pass with good level.");
+
     }
 
     public static void main(String[] args) throws Exception {
